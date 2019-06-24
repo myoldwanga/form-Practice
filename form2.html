@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form表单练习</title>
+</head>
+<body>
+    <div class="page">
+        <div class="info">
+            <form action="x.php" method="POST">
+                <div class="info-username">
+                    <label for="#info-username">姓名:</label>
+                    <input id="info-username" type="text" placeholder="请输入用户名">
+                </div>
+                <div class="info-password">
+                    <label for="info-password">密码:</label>
+                    <input id="info-password" type="password" value="123456">
+                </div>
+                <div class="info-sex">
+                    <label for="">性别:</label>
+                    <input type="radio" name="sex" id="sex-man" value="男" checked>
+                    <label for="sex-man">男</label>
+                    <input type="radio" name="sex" id="sex-woman" value="女">
+                    <label for="sex-woman">女</label>
+                </div>
+                <div class="info-ori">
+                    <label for="">取向:</label>
+                    <input type="radio" name="sex-ori" id="sex-oriMan" value="男">
+                    <label for="sex-oriMan">男</label>
+                    <input type="radio" name="sex-ori" id="sex-oriWoman" value="女" checked>
+                    <label for="sex-oriWoman">女</label>
+                </div>
+                <div class="info-hobby">
+                    <label for="">爱好:</label>
+                    <input type="checkbox" name="info-hobby" id="hobby-data" value="data">
+                    <label for="hobby-data">data</label>
+                    <input type="checkbox" name="info-hobby" id="hobby-tourism" value="旅游" checked>
+                    <label for="hobby-tourism">旅游</label>
+                    <input type="checkbox" name="info-hobby" id="hobby-pets" value="宠物" checked>
+                    <label for="hobby-pets">宠物</label>    
+                </div>
+                <div class="info-text">
+                    <label for="info-textarea">评论:</label>
+                    <textarea name="text" id="info-textarea" cols="30" rows="10">
+                        ddd
+                    </textarea>
+                </div>      
+                <div class="info-car">
+                    <label for="car">我的car:</label>
+                    <select name="car" id="car">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>          
+                <div class="info-submit">
+                    <input type="submit" value="提交">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
